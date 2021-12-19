@@ -1,12 +1,4 @@
-<?php
-$con = mysqli_connect("localhost", "root", "", "intern", "3309") or die(mysqli_error($con));
-session_start();
-// Redirects the user to products page if he/she is logged in.
-if (isset($_SESSION['email'])) {
-    header('location: products.php');
-}
 
-?>
 
 
 <!DOCTYPE html>
